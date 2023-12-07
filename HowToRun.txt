@@ -1,0 +1,5 @@
+docker build -t my-mysql-container .
+docker run -d --name my-mysql-instance my-mysql-container
+
+
+docker exec -it my-mysql-instance mysql -u root -p
